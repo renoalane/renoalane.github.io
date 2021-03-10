@@ -1,0 +1,19 @@
+.jumbotron {
+  padding: 5rem 0 0 0;
+  background-color: #000000;
+}
+#about {
+  margin-top: -120px;
+  position: relative;
+  background-color: #ffee00;
+}
+#projects {
+  background-color: #000000;
+  margin-top: -90px;
+  position: relative;
+}
+#contact {
+  margin-top: -120px;
+  position: relative;
+  background-color: #ffee00;
+}
