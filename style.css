@@ -48,7 +48,7 @@ main {
 }
 
 section {
-  margin: 2rem 0;
+  margin: 5rem 0;
 }
 /* MAIN */
 
@@ -57,7 +57,6 @@ div.aboutme {
   display: flex;
   gap: 0.2rem;
   padding: 0 1rem;
-  margin: 5rem 0;
 }
 div.aboutme div {
   flex: 1;
@@ -107,17 +106,74 @@ div.aboutme .left {
   margin: 1rem 1rem;
 }
 
+#projects .moreprojects {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+#projects button {
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+#projects button:hover {
+  box-shadow: 5px 5px #ddd;
+}
+
 .cont-projects {
   display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
 }
 
 .project {
-  width: 200px;
-  height: 200px;
+  width: 18rem;
+  height: 18rem;
   border: 1px solid black;
-  padding: 2em;
+  position: relative;
+  padding: 5px;
+  box-shadow: 5px 10px #888888;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.project:hover .overlay {
+  opacity: 1;
+}
+
+.project img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+}
+
+.project:hover img {
+  filter: blur(4px);
 }
 /* PROEJCT SECTION */
+
+/* CONTACT SECTION */
+#contact {
+  padding: 2rem 0;
+  margin: 2rem 1rem;
+}
+/* CONTACT SECTION */
 
 /* To TOP BUITTON */
 #top {
