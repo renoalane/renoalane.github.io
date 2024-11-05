@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap");
+
+:root {
+  --bg-base: #fff;
+  --font-base: #462d2d;
+}
+
+body {
+  font-family: "Pixelify Sans", sans-serif;
+  margin: 0 1rem;
+  color: var(--font-base);
+  background-color: var(--bg-base);
+}
+
+/* HEADER */
+header {
+  margin-top: 1em;
+  border: 1px solid black;
+  padding: 1em;
+}
+
+header .navbar {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+}
+
+ul.navbar li a {
+  padding: 2em;
+  text-decoration: none;
+  color: #000;
+}
+
+ul.navbar li a:hover {
+  background-color: #e1dcdc;
+}
+/* HEADER */
+
+/* MAIN */
+main {
+  margin: 2em 0;
+  width: 100%;
+}
+
+section {
+  margin: 2rem 0;
+}
+/* MAIN */
+
+/* ABOUTME SECTION */
+div.aboutme {
+  display: flex;
+  gap: 0.2rem;
+  padding: 0 1rem;
+  margin: 5rem 0;
+}
+div.aboutme div {
+  flex: 1;
+  display: flex;
+  margin: 0 1rem;
+  justify-content: center;
+}
+
+div.aboutme .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.set-skill {
+  padding-top: 2rem;
+}
+
+.set-skill .skill .skill-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.right {
+  padding: 1.5rem;
+}
+
+.right .img-me {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.right .img-me::before {
+  content: "";
+  width: 15rem;
+  height: 17rem;
+  position: absolute;
+  left: 115px;
+  top: -20px;
+  border: 1px solid black;
+  z-index: -88;
+}
+/* ABOUTME SECTION */
+
+/* PROEJCT SECTION */
+#projects {
+  margin: 1rem 1rem;
+}
+
+.cont-projects {
+  display: grid;
+}
+
+.project {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  padding: 2em;
+}
+/* PROEJCT SECTION */
+
+/* To TOP BUITTON */
+#top {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 1rem;
+  right: 1rem;
+  border-radius: 50%;
+  border: 1px solid black;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* To TOP BUITTON */
+
+/* FOOTER */
+/* FOOTER */
