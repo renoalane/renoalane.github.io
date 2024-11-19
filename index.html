@@ -7,25 +7,49 @@
       id="favicon"
       rel="icon"
       type="image/png"
-      href="public/favicon/favicon.gif"
+      href="public/favicon/console.ico"
     />
     <link rel="stylesheet" href="style.css" />
+      </circle>
+    </svg>
+
     <title>Simple Portofolio</title>
   </head>
   <body>
     <!-- Header -->
     <header>
-      <ul class="navbar">
-        <li>
-          <a href="#aboutme"> About Me </a>
-        </li>
-        <li>
-          <a href="#projects"> My Projects </a>
-        </li>
-        <li>
-          <a href="#contact"> My Contact </a>
-        </li>
-      </ul>
+      <div class="nav-web">
+        <ul class="navbar">
+          <li>
+            <a href="#aboutme"> About Me </a>
+          </li>
+          <li>
+            <a href="#projects"> My Projects </a>
+          </li>
+          <li>
+            <a href="#contact"> My Contact </a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-mobile">
+        <ul class="navbar">
+          <li>
+            <a href="#aboutme">
+              <img src="/public/icons/user.png" alt="aboutme"/>
+            </a>
+          </li>
+          <li>
+            <a href="#projects">
+              <img src="/public/icons/project.png" alt="projects"/>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <img src="/public/icons/contact.png" alt="contact"/>
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
@@ -35,9 +59,7 @@
           <div class="left">
             <h1>Hello My Name is Reno</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-              nisi ullam, totam dolores accusamus enim deserunt expedita, ab vel
-              sunt maxime voluptate accusantium vero ducimus magnam quam optio
+              I'm passionate about creating elegant solutions to complex problems. Always driven by curiosity and a love for learning, I continually seek out new challenges and advancements in the field, ensuring my skills stay sharp in a rapidly evolving industry.
             </p>
             <div class="set-skill">
               <div class="skill">
@@ -73,8 +95,8 @@
           <div class="right">
             <div class="img-me">
               <img
-                src="https://art.pixilart.com/1f0c0ae55712133.png"
-                style="width: 15rem; height: 17rem"
+                src="public/images/profile.jpg"
+                style="width: 15rem; height: 15rem;"
                 alt="foto"
               />
             </div>
@@ -133,14 +155,72 @@
       <!-- Contact Information -->
       <section id="contact">
         <h2 style="text-align: end">contact</h2>
+        <div class="contact">
+          <h4 style="text-align: start">Let's Connect</h4>
+          <form
+            action="https://getform.io/f/azylojpb"
+            method="post"
+            id="formConnect"
+          >
+            <div class="input">
+              <label for="">Name</label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <div class="input">
+              <label for="">Email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div class="input">
+              <label for="">Message</label>
+              <textarea name="message" id="message" required></textarea>
+            </div>
+            <button type="submit">Sent</button>
+          </form>
+          <div class="cont-contact">
+            <div class="contact">
+              <a
+                href="https://www.linkedin.com/in/renoalane/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="medsos-link"
+              >
+                <img src="/public/icons/linkedin.png" alt="linkedin" />
+              </a>
+            </div>
+            <div class="contact">
+              <a
+                href="https://github.com/renoalane"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="medsos-link"
+              >
+                <img src="/public/icons/github.png" alt="github" />
+              </a>
+            </div>
+            <div class="contact">
+              <a
+                href="mailto:renopradino@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="medsos-link"
+              >
+                <img src="/public/icons/email.png" alt="email" />
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
+    <!-- TOP BUTTON SCROLL -->
     <div id="top">
       <h4>top</h4>
     </div>
+    <!-- TOP BUTTON SCROLL -->
 
-    <footer>Footer</footer>
+    <footer>
+      <p>make with <span>galaxy</span> destroyer</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
