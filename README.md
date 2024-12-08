@@ -1,3 +1,3 @@
 # 1-SimplePortofolio
 
-# Build With HTML, CSS, Javascirpt
+# Build With HTML, CSS, and Javascript
