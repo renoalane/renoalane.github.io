@@ -91,12 +91,12 @@ div.aboutme .left {
 
 .right {
   padding: 1.5rem;
-  position: relative;
 }
 
 .right .img-me {
-  box-sizing: border-box;
   position: relative;
+  display: inline-block;
+  text-align: center;
 }
 
 .right .img-me::before {
@@ -104,10 +104,14 @@ div.aboutme .left {
   width: 15rem;
   height: 15rem;
   position: absolute;
-  left: 7rem;
-  top: -1.5em;
   border: 1px solid black;
   z-index: -88;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 2rem;
+  top: -1rem;
+  text-align: center;
 }
 /* ABOUTME SECTION */
 
