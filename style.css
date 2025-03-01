@@ -259,7 +259,7 @@ footer p span {
     width: 15rem;
     height: 15rem;
     position: absolute;
-    left: 2rem;
+    left: 0;
     top: -1.5em;
     border: 1px solid black;
     z-index: -88;
